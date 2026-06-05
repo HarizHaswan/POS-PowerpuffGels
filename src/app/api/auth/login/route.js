@@ -5,7 +5,7 @@ import { signSession } from "@/lib/session";
 export async function POST(request) {
   try {
     const { password } = await request.json();
-    const correctPassword = process.env.BOOTH_PASSWORD || "nadia_booth";
+    const correctPassword = process.env.BOOTH_PASSWORD || "12345";
 
     if (password !== correctPassword) {
       return NextResponse.json(
