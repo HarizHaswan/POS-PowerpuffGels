@@ -7,11 +7,17 @@ const globalForPrisma = globalThis;
 const getPrismaClient = () => {
   const connectionString = process.env.DATABASE_URL;
   
-  // Use a fallback URL only during local build / static compilation if env is not loaded,
-  // to avoid build-time initialization crashes if DATABASE_URL is missing.
+  // Fallback for local build validation
   const url = connectionString || "postgresql://postgres:postgres@localhost:5432/postgres";
   
-  const pool = new Pool({ connectionString: url });
+  const isLocal = url.includes("localhost") || url.includes("127.0.0.1");
+  
+  const pool = new Pool({
+    connectionString: url,
+    // Supabase and Neon require SSL. Using rejectUnauthorized: false prevents SSL certificate validation failures.
+    ssl: isLocal ? false : { rejectUnauthorized: false },
+  });
+  
   const adapter = new PrismaPg(pool);
   return new PrismaClient({ adapter });
 };
