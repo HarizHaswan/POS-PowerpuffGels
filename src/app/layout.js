@@ -24,7 +24,20 @@ export default async function RootLayout({ children }) {
           <>
             <header className="nav-header">
               <div className="nav-content">
-                <span className="nav-title">Booth POS</span>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <img
+                    src="/logo.jpg"
+                    alt="Powerpuff Gels Logo"
+                    style={{
+                      height: "36px",
+                      width: "36px",
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                      border: "1px solid rgba(255, 255, 255, 0.2)",
+                    }}
+                  />
+                  <span className="nav-title">Booth POS</span>
+                </div>
                 <Navigation type="header" />
               </div>
             </header>

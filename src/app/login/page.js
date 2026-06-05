@@ -58,11 +58,24 @@ export default function LoginPage() {
           border: "1px solid rgba(255, 255, 255, 0.15)",
         }}
       >
+        <img
+          src="/logo.jpg"
+          alt="Powerpuff Gels Logo"
+          style={{
+            width: "80px",
+            height: "80px",
+            borderRadius: "50%",
+            objectFit: "cover",
+            marginBottom: "16px",
+            border: "2px solid rgba(255, 255, 255, 0.2)",
+            boxShadow: "var(--shadow-premium)",
+          }}
+        />
         <h1
           style={{
-            fontSize: "2rem",
+            fontSize: "1.8rem",
             fontWeight: "800",
-            marginBottom: "8px",
+            marginBottom: "4px",
             background: "linear-gradient(135deg, #ec4899, #f59e0b)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -70,8 +83,8 @@ export default function LoginPage() {
         >
           Booth POS
         </h1>
-        <p style={{ marginBottom: "28px", fontSize: "0.95rem" }}>
-          Popup Booth Staff Portal
+        <p style={{ marginBottom: "24px", fontSize: "0.9rem" }}>
+          Powerpuff Gels Portal
         </p>
 
         <form onSubmit={handleSubmit}>
