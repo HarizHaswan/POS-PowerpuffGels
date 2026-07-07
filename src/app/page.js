@@ -274,10 +274,10 @@ export default function POSPage() {
           <div style={{ marginTop: "4px" }}>
             <label className="form-label" style={{ fontSize: "0.75rem" }}>Add Quick Preset</label>
             <div className="preset-grid">
-              <button type="button" onClick={() => handlePresetAmount(item.id, 5)} className="preset-btn">+5</button>
-              <button type="button" onClick={() => handlePresetAmount(item.id, 10)} className="preset-btn">+10</button>
-              <button type="button" onClick={() => handlePresetAmount(item.id, 20)} className="preset-btn">+20</button>
-              <button type="button" onClick={() => handlePresetAmount(item.id, 50)} className="preset-btn">+50</button>
+              <button type="button" onClick={() => handlePresetAmount(item.id, 5)} className="preset-btn">+RM5</button>
+              <button type="button" onClick={() => handlePresetAmount(item.id, 10)} className="preset-btn">+RM10</button>
+              <button type="button" onClick={() => handlePresetAmount(item.id, 20)} className="preset-btn">+RM20</button>
+              <button type="button" onClick={() => handlePresetAmount(item.id, 50)} className="preset-btn">+RM50</button>
             </div>
           </div>
         </div>
