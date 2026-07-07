@@ -8,7 +8,7 @@ export default function ReportsPage() {
   const [error, setError] = useState("");
 
   // Date filter state
-  const [dateType, setDateType] = useState("all"); // 'all', 'today', 'yesterday', 'custom'
+  const [dateType, setDateType] = useState("today"); // 'all', 'today', 'yesterday', 'custom'
   const [customDate, setCustomDate] = useState("");
 
   // Load report stats
@@ -36,7 +36,10 @@ export default function ReportsPage() {
   };
 
   useEffect(() => {
-    fetchReports();
+    const timer = setTimeout(() => {
+      fetchReports();
+    }, 0);
+    return () => clearTimeout(timer);
   }, [dateType, customDate]);
 
   // Export handlers

@@ -10,7 +10,7 @@ export default function HistoryPage() {
   // Filters state
   const [search, setSearch] = useState("");
   const [seller, setSeller] = useState("All");
-  const [dateType, setDateType] = useState("all"); // 'all', 'today', 'yesterday', 'custom'
+  const [dateType, setDateType] = useState("today"); // 'all', 'today', 'yesterday', 'custom'
   const [customDate, setCustomDate] = useState("");
 
   // Editing state
