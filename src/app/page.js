@@ -301,13 +301,13 @@ export default function POSPage() {
       {/* Transaction Notes */}
       <div className="glass-card">
         <div className="form-group" style={{ marginBottom: 0 }}>
-          <label className="form-label">Transaction Notes (Optional)</label>
+          <label className="form-label">Remarks (Optional)</label>
           <input
             type="text"
             className="form-input"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
-            placeholder="e.g. Vintage dress, jacket, paid cash..."
+            placeholder="e.g. Cash, TNG, QR, Baju, Seluar"
           />
         </div>
       </div>
