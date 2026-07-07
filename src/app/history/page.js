@@ -534,10 +534,10 @@ export default function HistoryPage() {
 
                   {/* Presets */}
                   <div className="preset-grid" style={{ marginTop: "6px" }}>
-                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 5)} className="preset-btn" style={{ minHeight: "26px" }}>+5</button>
-                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 10)} className="preset-btn" style={{ minHeight: "26px" }}>+10</button>
-                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 20)} className="preset-btn" style={{ minHeight: "26px" }}>+20</button>
-                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 50)} className="preset-btn" style={{ minHeight: "26px" }}>+50</button>
+                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 5)} className="preset-btn" style={{ minHeight: "26px" }}>+RM5</button>
+                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 10)} className="preset-btn" style={{ minHeight: "26px" }}>+RM10</button>
+                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 20)} className="preset-btn" style={{ minHeight: "26px" }}>+RM20</button>
+                    <button type="button" onClick={() => handlePresetEditAmount(item.id, 50)} className="preset-btn" style={{ minHeight: "26px" }}>+RM50</button>
                   </div>
                 </div>
               ))}
