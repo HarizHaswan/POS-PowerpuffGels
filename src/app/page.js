@@ -295,7 +295,7 @@ export default function POSPage() {
           padding: "14px",
         }}
       >
-        ➕ Add Another Item (Mixed Purchase)
+        ➕ Add Another Item (Mixed Seller Purchase)
       </button>
 
       {/* Transaction Notes */}
